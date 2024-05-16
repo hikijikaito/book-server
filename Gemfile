@@ -66,3 +66,10 @@ group :test do
   gem "selenium-webdriver"
 end
 
+gem "webpacker", "~> 5.4"
+gem 'rack-cors'
+gem 'active_hash'
+gem 'mini_magick'
+gem 'image_processing', '~> 1.2'
+gem 'httparty'
+
