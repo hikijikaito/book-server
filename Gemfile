@@ -72,5 +72,6 @@ gem 'mini_magick'
 gem 'image_processing', '~> 1.2'
 gem 'httparty'
 gem 'base64', '~> 0.2.0'
+gem 'pg'
 
 
