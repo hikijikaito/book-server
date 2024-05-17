@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_05_16_071232) do
+ActiveRecord::Schema[7.1].define(version: 2024_05_17_050826) do
   create_table "posts", charset: "utf8mb4", force: :cascade do |t|
     t.string "title"
     t.date "date"
@@ -22,6 +22,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_05_16_071232) do
     t.string "tag", default: ""
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "cover_url"
   end
 
 end
