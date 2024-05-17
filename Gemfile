@@ -73,5 +73,8 @@ gem 'image_processing', '~> 1.2'
 gem 'httparty'
 gem 'base64', '~> 0.2.0'
 gem 'pg'
+group :production do
+  gem 'pg'
+end
 
 
