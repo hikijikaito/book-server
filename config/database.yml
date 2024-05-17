@@ -55,3 +55,4 @@ production:
   password: <%= ENV["BOOK_SERVER_DATABASE_PASSWORD"] %>
   adapter: postgresql
   url: <%= ENV['DATABASE_URL'] %>
+  encoding: UTF-8
