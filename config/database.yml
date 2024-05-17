@@ -1,9 +1,7 @@
 production:
   <<: *default
-  database: book_server_production
-  username: book_server
-  password: <%= ENV["BOOK_SERVER_DATABASE_PASSWORD"] %>
-
+  adapter: postgresql
+  url: <%= ENV['DATABASE_URL'] %>
 
 default: &default
   encoding: utf8
@@ -24,8 +22,3 @@ test:
   password:
   host: localhost
   database: book_server_test
-
-production:
-  <<: *default
-  adapter: postgresql
-  url: <%= ENV['DATABASE_URL'] %>
